@@ -69,7 +69,7 @@ Referensi:
 
 ## 🔒 Keamanan
 Pada produksi, **jangan** memanggil OpenAI langsung dari browser. Selalu **proxy** via backend (seperti proyek ini).
-Pastikan `OPENAI_API_KEY` disimpan sebagai secret di server/CI, bukan di repo.
+Pastikan `GEMINI_API_KEY` disimpan sebagai secret di server/CI, bukan di repo.
 
 ## 📦 Build Produksi (opsional)
 ```bash
