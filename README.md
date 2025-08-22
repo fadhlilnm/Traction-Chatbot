@@ -5,7 +5,7 @@ Proyek web **AI chatbot** dengan **voice command** (speech-to-text) dan **text-t
 - Backend: Node.js (Express) + Gemini **Responses API**
 - STT/TTS: **Web Speech API** (browser). Disarankan Chrome desktop.
 
-> Bisa jalan **tanpa** kunci API (mode demo). Untuk jawaban AI sesungguhnya, set `GEMINI_API_KEY` di backend.
+> Untuk jawaban AI sesungguhnya, set `GEMINI_API_KEY` di backend.
 
 ## 🚀 Cara Menjalankan (Dev)
 
