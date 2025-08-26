@@ -2,10 +2,10 @@
 
 Proyek web **AI chatbot** dengan **voice command** (speech-to-text) dan **text-to-speech** langsung di browser.
 - Frontend: React + Vite + TailwindCSS
-- Backend: Node.js (Express) + OpenAI **Responses API**
+- Backend: Node.js (Express) + Gemini **Responses API**
 - STT/TTS: **Web Speech API** (browser). Disarankan Chrome desktop.
 
-> Bisa jalan **tanpa** kunci API (mode demo). Untuk jawaban AI sesungguhnya, set `OPENAI_API_KEY` di backend.
+> Untuk jawaban AI sesungguhnya, set `GEMINI_API_KEY` di backend.
 
 ## 🚀 Cara Menjalankan (Dev)
 
@@ -56,7 +56,7 @@ voice-ai-chatbot-web/
 ```
 
 ## ⚙️ Konfigurasi
-- Ubah model di frontend `src/services/api.js` (default `gpt-4o-mini`) atau kirim melalui body ke `/api/chat`.
+- Ubah model di frontend `src/services/api.js` (default `gemini-1.5-flash`) atau kirim melalui body ke `/api/chat`.
 - Atur bahasa STT/TTS di dropdown (`id-ID` atau `en-US`).
 
 ## 🗣️ Catatan STT/TTS (Web Speech API)
@@ -69,7 +69,7 @@ Referensi:
 
 ## 🔒 Keamanan
 Pada produksi, **jangan** memanggil OpenAI langsung dari browser. Selalu **proxy** via backend (seperti proyek ini).
-Pastikan `OPENAI_API_KEY` disimpan sebagai secret di server/CI, bukan di repo.
+Pastikan `GEMINI_API_KEY` disimpan sebagai secret di server/CI, bukan di repo.
 
 ## 📦 Build Produksi (opsional)
 ```bash
