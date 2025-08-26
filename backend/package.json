@@ -11,6 +11,10 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "openai": "^4.57.0"
+    "multer": "^2.0.2",
+    "openai": "^4.57.0",
+    "pdf-parse": "^1.1.1",
+    "pdfjs-dist": "^5.4.54",
+    "unzipper": "^0.12.3"
   }
 }
